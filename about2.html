@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="app.css"/>
+<head>
+<title></title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style type="text/css">
+body{
+      background-image: url('sizoh.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+       }
+    
+
+    nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 30px; 
+    border-radius: 50:;
+  }
+  
+   
+  nav ul{
+    list-style: none;
+  }
+  
+
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+ .tech{
+  display: inline-block;
+  width: 80%;}
+  
+  .tech img{
+    max-width: 100%;
+    border-radius: 30%;
+  }
+
+.tech p{
+
+    background-color: transparent;
+  font-size: 20px;
+  color: white;
+  width: 40%
+  text-align: center;
+  font-family: new roman times;
+}
+  
+
+
+.tech h1{
+
+    background-color: transparent;
+  font-size: 24px;
+  color: white;
+  width: 50%
+  text-align:center;
+  font-family: new roman times;
+}
+
+header{
+  background-color: transparent;
+}
+  li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+  }
+
+  nav a{
+    color: white;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 14px;
+
+  }
+
+  nav a:hover {
+    color: green;
+
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: white;
+    
+   position: absolute;
+    top:0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+  } 
+
+
+  nav a:hover::before{
+    width: 100%;
+  }
+
+  @media (max-width: 450px){
+    .tech{
+            width: 100%;
+    }
+  }
+ 
+</style>
+</head>
+
+<body>
+  <header>
+     <nav>
+           <div class="logo">
+           <img src="HHH.png" width="200" height="100">
+          </div>
+         <ul>
+           <li><a href="home2.html"> HOME</a></li>
+          <li><a href="about2.html"> ABOUT</a></li>
+          <li><a href="projects1.html"> PROJECTS</a></li>
+          <li><a href="contacts.html"> CONTACTS</a></li>
+        </ul>
+    </nav>
+     
+   </header>    
+   
+      <br><h1> THANK YOU FOR VISITING MY SITE </h1></br>
+
+     
+    <div class="tech">
+          
+         <br><p>I'm a full stack developer at Younglings Africa, i develop  websites and also do branding design, social media marketing, Seo and digital marketing, i believe in principle of agility during development as it ensure communication and satisfication of the product that meet the needs or requirements of the client. i design with passion and dedication to my work to ensure that your ultimate goal is achived </p></br>  
+    </div>
+
+    <div class="tech">
+
+      <img src="yes.png" width="400" height="300">
+    </div>
+        
+      
+    
+  </div>
+
+</div>
+
+</body>
+</html>
+

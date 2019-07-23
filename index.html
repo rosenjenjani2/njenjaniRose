@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="loliwe.css"/>
+<head>
+<title>ABOUT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+body{
+      background-image: url('sizoh.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+       }
+
+
+    nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 30px;
+    border-radius: 50:;
+  }
+
+
+  nav ul{
+    list-style: none;
+  }
+
+
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+ .tech{
+  display: inline-block;
+  width: 80%;}
+
+  .tech img{
+    max-width: 100%;
+    border-radius: 30%;
+  }
+
+.tech p{
+
+    background-color: transparent;
+  font-size: 58;
+  color: white;
+  width: 40%
+  align-items:center;
+  font-family: new roman times;
+}
+
+
+
+.tech h1{
+
+    background-color: transparent;
+  font-size: 100;
+  color: white;
+  width: 50%
+  align-items:center;
+  font-family: new roman times;
+}
+
+header{
+  background-color: transparent;
+}
+  li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+  }
+
+  nav a{
+    color: white;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 14px;
+
+  }
+
+  nav a:hover {
+    color: green;
+
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: white;
+
+   position: absolute;
+    top:0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+  }
+
+
+
+  nav a:hover::before{
+    width: 100%;
+  }
+
+  @media (max-width: 450px){
+    .tech{
+            width: 100%;
+    }
+  }
+
+</style>
+</head>
+
+
+<body>
+  <header>
+     <nav>
+           <div class="logo">
+           <img src="HHH.png" width="200" height="100" alt="">
+          </div>
+         <ul>
+           <li><a href="index.html"> HOME</a></li>
+          <li><a href="about2.html"> ABOUT</a></li>
+          <li><a href="projects1.html"> PROJECTS</a></li>
+          <li><a href="contacts.html"> CONTACTS</a></li>
+        </ul>
+    </nav>
+
+   </header>
+
+<div class="container">
+
+
+      <div class="tech">
+       <b><h1>HELLO THERE MY NAME IS MBALENTLE NJENJANI</h1></b>
+      <br><p><b> MY NAME IS MBALENTLE NJENJANI AND I  AM A FULLSTACK DEVELOPER, I ALSO DO BRANDING DESIGN AND SOCIAL MEDIA MANAGEMENT,SEO AND DIGITAL MARKETING, LET ME HELP YOU YOU ENHANCE YOUR BUSSINESS TO THE NEXT LEVEL</b></p></br></div>
+
+      <div class="tech">
+       <img src="too3.jpg">
+     </div>
+
+
+</div>
+                            <a href="#" class="fa fa-linkedin"></a>
+                            <a href="#" class="fa fa-facebook"></a>
+                       </div>
+</body>
+</html>
