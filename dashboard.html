@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<head>
+	<title>User-DashBoard</title>
+
+
+<style>
+* {
+
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+
+input[type=text] {
+	width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  resize: vertical;
+}
+
+label {
+  padding: 10px 10px 10px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.col-sm-3  {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.form-control:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1{
+	text-size: 30px;
+	color: navy;
+	text-align: center;
+}
+
+p{
+	text-size:20px;
+	color: green;
+
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+		     		<div class="col-sm-3 ">
+				    	<h1> Apply Now</h1>
+				    	<p>Please provide your correct details</p>
+
+				    	<label for="username"><b>First Name</b></label>
+				    	<input class="form-control" id="firstname" type="text" name="firstname" required="">
+
+
+				    	<label for="surname"><b>Surname</b></label>
+				    	<input class="form-control"  id="Surname" type="text" name="Surname" required="">
+
+
+				    	<label for="id-number"><b>SA ID Number</b></label>
+				    	<input class="form-control" id="id-number" type="text" name="id-number" required="">
+
+
+				    	<label for="Loan"><b>Loan Amount</b></label>
+				    	<input class="form-control" id="Loan" type="text" name="Loan" required="">
+
+
+				    	<label for="g-m"><b>Gross Montly Income</b></label>
+				    	<input class="form-control"  id="g-m" type="text" name="g-m" required="">
+
+
+				    	<label for="net-montly-income"><b>Nett Montly Income</b></label>
+				    	<input class="form-control" id="net-montly-income" type="text" name="net-montly-income" required="">
+
+
+	                    <label for="wage-type"><b>Wage Type</b></label>
+				    	<input class="form-control" id="wage-type" type="text" name="wage-type" required="">
+
+
+				    	<label for="bankname"><b>Bank Name</b></label>
+				    	<input class="form-control"  id="bankname" type="text" name="bankname" required="">
+
+
+				    	<label for="number"><b>Cellphone Number</b></label>
+				    	<input class="form-control" id="number" type="text" name="number" required="">
+
+
+
+	                    <label for="em-status"><b>Employment Status</b></label>
+				    	<input class="form-control" id="em-status" type="text" name="em-status" required="">
+
+
+				    	<label for="email"><b>Email</b></label>
+				    	<input class="form-control"  id="email" type="text" name="email" required="">
+
+
+				    	<label for="bankaccount"><b>Bank Account Number</b></label>
+				    	<input class="form-control" id="bankaccount" type="text" name="bankaccount" required="">
+
+
+				    	<label for="3-months"><b>Three months banking Statement</b></label>
+				    	 <button onclick="myFunction()">Upload</button>
+
+				    	 <label for="proof"><b>Proof of Residence</b></label>
+				    	 <button onclick="myFunction()">Upload</button>
+				    	
+
+				    	 <label for="proof"><b>Latest Payslip</b></label>
+				    	 <button onclick="myFunction()">Upload</button>
+
+				    	<input class="btn btn-primary" type="submit" id="register" name="create" value="Apply Now">
+
+	    
+	    </div>	    
+
+	    <div>
+        <h1>What You Need to Apply</h1>
+	    <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class='fas fa-map-marker-alt' style='font-size:48px;color:orange'></i>
+        <h3>Proof of Residence</h3>
+        <p>send us a proof of residence</p> </div>
+      
+         <div>
+          <i class='fas fa-address-card' style='font-size:48px;color:orange'></i>
+          <h3>Id/Valid Passport</h3>
+          <p>send us your what what</p>
+      </div>
+
+           <i class="material-icons" style="font-size:48px;color:orange">folder_open</i>
+         <h3>Three months banking statement</h3>
+         <p>Send us three months latest statement </p> 
+
+          <i class='far fa-money-bill-alt' style='font-size:48px;color:orange'></i>
+               <h3>Latest Payslip</h3>
+               <p>Your latest payslip</p>
+       </div>  
+
+
+
+	<script>
+function myFunction() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "file");
+  document.body.appendChild(x);
+}
+</script>   
+ <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+</body>
+</html>

@@ -1,0 +1,120 @@
+body{
+	  background-image: url('ContactUs.jpg');
+	  background-repeat: no-repeat;
+	  background-size: 100% 110%;
+	 width: 100%;
+    height: 100vh;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+   
+
+}
+    
+.coin{
+    background-image: url("tt.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-right: -100px;
+    padding-bottom: 100px;
+    padding-left: 500px;
+    margin: 10px 10px 10px 10px;
+    size: cover;
+}
+.aboutus{
+
+}
+
+.nav{
+    color: white;
+}
+
+
+.menu{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+.leftmenu{
+    width: 20%;
+    line-height: 100px;
+    float: left;
+    }
+/*  background-color: yellow;*/
+
+.ft1{
+
+
+background: rgb(137, 23, 141);
+width: 33%;
+float: left;
+}
+.ft2{
+
+background: rgb(137, 23, 141);
+width: 33%;
+float: left;
+border: 3px bisqueground: rgb(137, 23, 141);
+width: 33%;
+float: left;
+}
+
+.leftmenu h2{
+    padding-left: 70px;
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.rightmenu{
+    width:70%;
+    height: 100px;
+    float: right;
+    color: white;
+    background-color: opacity(0%); 
+}
+
+.rightmenu ul{
+    margin-left: 200px;
+}
+
+.rightmenu ul li a{
+        color:white;
+}
+
+.rightmenu ul li {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 100px;
+    margin-left: 40px;
+    text-transform: uppercase;
+
+}
+
+p{
+	font-size: 24px;
+	color: red;
+	text-align: right;
+}
+
+h1{
+	text-align: center;
+	color: black;
+}
+
+h2{
+	color: black;
+}

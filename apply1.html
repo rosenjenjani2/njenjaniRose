@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>APPLY</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <form class="modal-content" action="/action_page.php">
+    <div class="container">
+</div>
+</head>
+
+<body>
+<h1>APPLICATION FORM</h1>
+<div class="panel-body pad15"><p>Please provide us with the below details to get your application started.<br>PLEASE NOTE: All fields are mandatory.</p>
+<div class="row pad15">
+<div class="col-sm-6">
+<div class="form-group infield"><label for="ffname">First Name</label> &nbsp <input type="text" class="form-control" id="ffname" name="applicant.firstName.0" value="" maxlength="50" placeholder="First Name"></div>
+</div>
+<br>
+<div class="col-sm-6">
+<div class="form-group infield">
+<label for="fsname">Surname</label> &nbsp
+<input type="text" class="form-control" id="fsname" name="applicant.surname.0" value="" maxlength="50" placeholder="Surname">
+</div>
+</div>
+<br>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group infield">
+<label for="fidNumber">ID Number</label> &nbsp
+<input type="tel" maxlength="13" class="form-control" id="fidNumber" name="applicant.idNumber.0" value="" placeholder="ID Number">
+<input type="hidden" name="applicant.idType.0" value="01">
+</div>
+<br>
+<div class="col-sm-6">
+<div class="form-group infield">
+<label for="floanAmount">How much do you want to borrow?</label> &nbsp
+<input type="tel" class="form-control text-right" id="floanAmount" name="applicant.loanAmount.0" onkeyup="decimalFormat(event, 6, 2)" value="" placeholder="Loan Amount">
+</div>
+<br>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group infield">
+<label for="fgross">Gross Monthly Income</label> &nbsp
+<input type="tel" class="form-control text-right" id="fgross" name="applicant.incomeGross.0" onkeyup="decimalFormat(event, 6, 2)" value="" placeholder="Gross Monthly Income">
+</div>
+<br>
+<div class="col-sm-6">
+<div class="form-group infield">
+<label for="fnett">Nett Monthly Income</label> &nbsp
+<input type="tel" class="form-control text-right" id="fnett" name="applicant.incomeNett.0" onkeyup="decimalFormat(event, 6, 2)" value="" placeholder="Nett Monthly Income">
+</div>
+<br>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group infield">
+<label for="fexpenses">Monthly Expenses</label> &nbsp
+<input type="tel" class="form-control text-right" id="fexpenses" name="applicant.expenses.0" onkeyup="decimalFormat(event, 6, 2)" value="" placeholder="Monthly Expenses">
+</div>
+<br>
+<div class="col-sm-6">
+<div class="form-group infield helperrpad">
+<label for="fwagetype">Wage Type</label> &nbsp
+<select class="form-control no-selection" id="fwagetype" name="applicant.wageType.0">
+<option value="">Wage Type</option>
+<option value="F">Fortnightly</option>
+<option value="W">Weekly</option>
+<option value="M">Monthly</option>
+</select>
+</div>
+<br>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group infield helperrpad">
+<label>Bank name</label> &nbsp
+<select name="applicant.bankCode.0" id="itemBankCode" class="form-control no-selection">
+<option value="" class="empty_option">Bank Name</option>
+<option value="ABSA">ABSA</option>
+<option value="ABIL">African Bank</option>
+<option value="BDB">Bidvest Bank</option>
+<option value="CAPI">Capitec</option>
+<option value="FMB">Finbond Mutual Bank</option>
+<option value="FNB">First National Bank</option>
+<option value="INV">Investec</option>
+<option value="NED">Nedbank</option>
+<option value="SARB">South African Reserve Bank</option>
+<option value="SBSA">Standard Bank</option>
+</select>
+</div>
+</div>
+<br>
+<div class="col-sm-6">
+<div class="form-group infield">
+<label for="fbanknum">Bank Account Number</label> &nbsp
+<input type="tel" maxlength="20" class="form-control" id="fbanknum" name="applicant.accountNumber.0" value="" placeholder="Bank Account Number"></div></div></div><div class="row">
+<div class="col-sm-6"><div class="form-group infield">
+<br>
+<label for="fmobile">Mobile Number</label>
+<input type="tel" maxlength="10" class="form-control" id="fmobile" name="applicant.mobNumber.0" value="" placeholder="Mobile Number">
+</div>
+<br>
+<div class="col-sm-6">
+<div class="form-group infield">
+<label for="faltnum">Alternative Number</label> &nbsp
+<input type="tel" maxlength="10" class="form-control" id="faltnum" name="applicant.altNumber.0" value="" placeholder="Alternative Number">
+</div>
+</div>
+</div>
+<br>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group infield">
+<label for="femail">Email</label> &nbsp
+<input type="text" maxlength="50" class="form-control" id="femail" name="applicant.email.0" value="" placeholder="Email">
+</div>
+<br>
+<div class="col-sm-6">
+<div class="form-group infield">
+<label for="confirm_email">Confirm Email</label> &nbsp
+<input type="text" maxlength="50" class="form-control" id="confirm_email" name="applicant.emailConfirm.0" value="" placeholder="Confirm Email">
+</div>
+<br>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group infield helperrpad">
+<label for="fedu">Education</label> &nbsp
+<select class="form-control no-selection" id="fedu" name="applicant.education.0">
+<option value="">Education</option>
+<option value="COL">College</option>
+<option value="UNI">University</option>
+<option value="HIS">High school</option>
+<option value="TEC">Technikon</option>
+<option value="NON">None</option>
+</select>
+</div>
+</div>
+<br>
+<div class="col-sm-6">
+<div class="form-group infield helperrpad">
+<label for="fempstatus">Employment Status</label> &nbsp
+<select class="form-control no-selection" id="fempstatus" name="applicant.employmentStatus.0">
+<option value="">Employment Status</option>
+<option class="falseselect" value="CON">Contract workers</option>
+<option class="falseselect" value="PAR">Part time</option>
+<option class="falseselect" value="FUL">Permanent</option>
+<option class="falseselect" value="RET">Retired</option>
+<option class="falseselect" value="SEL">Self employed</option>
+<option class="falseselect" value="STU">Student</option>
+<option class="falseselect" value="TEM">Temporary employed</option>
+<option class="falseselect" value="UNE">Unemployed</option>
+</select>
+</div>
+</div>
+</div>
+<br>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group infield input-group date dateBlockFuture">
+<label for="datepickerstartdate">Employment Start Date (YYYYMMDD)</label> &nbsp
+<input type="tel" id="datepickerstartdate" name="applicant.employmentStartDate.0" value="" class="form-control" placeholder="Employment Start Date (YYYYMMDD)">
+<span class="input-group-addon">
+<i class="glyphicon glyphicon-calendar">
+</i>
+</span>
+</div>
+</div>
+<br>
+<div class="col-sm-6"><div id="empEndDate" class="form-group infield input-group date dateBlockPast displaynone">
+<label for="datepickerenddate">Employment End Date (YYYYMMDD)</label> &nbsp
+<input type="tel" class="form-control" id="datepickerenddate" name="applicant.employmentEndDate.0" value="" placeholder="Employment End Date (YYYYMMDD)">
+<span class="input-group-addon">
+<i class="glyphicon glyphicon-calendar"></i>
+</span>
+<input type="submit" name="" value="SUBMIT">
+</div>
+<br>
+</body>
+</form>
+</html>

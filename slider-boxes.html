@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+              <div class="rightmenu">
+                <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="Aboutus.html">About Us</a>
+                  <li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="apply.html">APPLY NOW</a>
+                  <li>
+                  <li><a href="Contact.html">Contact us</a></li>
+                </ul>
+              </div>
+  <div class="coin">
+  <a href="#"><img name="slide" class="interest"></a>
+  <!-- <img src="iimali.jpg" alt=""> -->
+  </div>
+  <script>
+    var i = 0;
+    var images = [];
+    var time = 4000;
+
+    //image list
+    images[0] = '234.png';
+    images[1] = '235.png';
+    images[2] = '236.png';
+    images[3] = '237.png';
+    images[4] = '238.png';
+    // images[5] = 'images/travel.png';
+
+    //Change Time
+    function changeImage() {
+      document.slide.src = images[i];
+
+      if (i < images.length - 1) {
+        i++;
+      }
+      else {
+        i = 0;
+      }
+
+      setTimeout("changeImage()", time);
+    }
+
+    window.onload = changeImage;
+  </script>
+
+<div>
+    <h1>
+        OUR PARTNERS
+    </h1>
+    <img src="d1.png" width="200px" height="200px">
+    <img src="d2.jpg" width="200px" height="200px">
+    <img src="d3.jpg" width="200px" height="200px">
+    <img src="d5.png" width="200px" height="200px">
+    <img src="d6.jpg" width="200px" height="200px">
+    <img src="d7.png" width="200px" height="200px" >
+    <img src="d8.jpg" width="200px" height="200px">
+    <img src="d9.png" width="200px" height="200px">
+    <img src="d4.png" width="250px" height="200px">
+</div>
+</body>
+</html>
+  
